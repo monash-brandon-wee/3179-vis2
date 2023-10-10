@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot showing the average mass of meteorites of each year",
+  "data": {"url": "yearly-average.csv"},
+  "params": [{
+    "name": "grid",
+    "select": "interval",
+    "bind": "scales"
+  }],
+  "mark": "circle",
+  "width": 800,
+  "height": 500,
+  "encoding": {
+    "x": {"field": "year", "type": "quantitative"},
+    "y": {
+      "field": "mass",
+      "type": "quantitative",
+      "scale": {"type": "log"},  
+      "title": "average mass (log scale)"
+    },
+    "size": {
+      "field": "mass",
+      "type": "quantitative",
+      "scale": {"range": [20, 10000]}, 
+      "title": "Mass"
+    },
+    "tooltip": [{"field": "year"}, {"field": "mass"}]
+  }
+}

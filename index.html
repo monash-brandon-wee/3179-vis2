@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
+    <title>Meteorite Landings </title>
+</head>
+
+<body>
+    <h1>Meteorite Landings on Earth</h1>
+    <p>Welcome to our celestial journey into the fascinating world of meteorites! These enigmatic space rocks, remnants of distant cosmic events, have captured the imagination of scientists and stargazers alike for centuries. Meteorites provide us with invaluable clues about the universe's origin and evolution, shedding light on our place in the cosmos.</p>
+    <p></p>
+    <p>One of the key aspects that make each meteorite unique is its "recclass" or classification. This classification system categorizes meteorites based on their mineral composition, providing insights into their origins and the cosmic processes they've endured. Join us as we delve deeper into the extraordinary world of meteorites and unravel the stories they hold from the far reaches of space.</p>
+
+
+    <h2>Globe Visualization of Meteorites by Recclass</h2>
+    <p>Our interactive globe offers a captivating insight into meteorite landings around the world, where each meteorite's "recclass" is distinguished by a unique and vivid color. As you explore this immersive experience, you'll witness the cosmic journey of these space rocks, beautifully mapped onto the Earth's surface.</p>
+
+    <h3>Key Features:</h3>
+    <ol>
+        <li>
+            <strong>Recclass-Based Color Coding:</strong>
+            <p>Meteorites vary in composition and origin, and our globe visualization highlights these differences. Each meteorite's "recclass" determines its color, making it easy to distinguish between types. Whether it's an iron meteorite, a stony meteorite, or a rare chondrite, you'll see the world through the lens of cosmic diversity.</p>
+        </li>
+        <li>
+            <strong>Interactive Sliders:</strong>
+            <p>Take control of your exploration with our interactive sliders. Adjust the horizontal and vertical rotation angles to change your view of the globe, providing a dynamic perspective of meteorite landings across the planet.</p>
+            <ul>
+                <li><strong>Horizontal Rotation:</strong> Rotate the globe horizontally to explore meteorite landings across different longitudes.</li>
+                <li><strong>Vertical Rotation:</strong> Adjust the vertical rotation angle to change your viewing angle from pole to equator.</li>
+                <li><strong>Zoom Control:</strong> Zoom in for a closer look at individual meteorite impact locations or zoom out for a global overview.</li>
+            </ul>
+        </li>
+    </ol>
+    <div id="globe_plot" class="centre">
+    </div>
+
+
+    <h2>Exploring Meteorite Recclass and Average Mass</h2>
+    <p>Our dynamic bubble plot invites you to embark on a captivating journey through the world of meteorites, where we showcase the average masses of various "recclass" in a visually engaging manner. This interactive data visualization empowers you to delve deep into the fascinating realm of meteoritic materials.</p>
+
+    <h3>Key Features:</h3>
+    <ol>
+        <li>
+            <strong>Bubble Representation:</strong>
+            <p>Each bubble on the plot represents a specific meteorite "recclass". The size of the bubble corresponds to the average mass of meteorites within that class, offering an instant visual comparison of their relative sizes.</p>
+        </li>
+        <li>
+            <strong>Hover for Details:</strong>
+            <p>The real magic happens when you hover your cursor over a bubble. As you do, a wealth of information unfolds before your eyes. Discover not only the "recclass" but also the precise average mass of each meteoritic material.</p>
+        </li>
+        <li>
+            <strong>User-Friendly Exploration:</strong>
+            <p>Our bubble plot is designed with user-friendliness in mind. It offers an intuitive and interactive experience, allowing you to uncover the secrets hidden within meteorites effortlessly.</p>
+        </li>
+    </ol>
+
+    <div id="bubble_chart" class="centre"> 
+    </div>
+
+
+    <h2>Scatter Plot: Exploring Meteorite Mass Over Time</h2>
+    
+    <p>Our interactive scatter plot takes you on a captivating journey through time, showcasing the average masses of meteorites with a twist – the size of each data point varies dynamically based on the meteorite's average mass. This engaging data visualization offers a unique perspective on meteorite data, allowing you to explore it interactively.</p>
+
+    <h3>Key Features:</h3>
+    <ol>
+        <li>
+            <strong>Varying Point Sizes:</strong>
+            <p>As you explore the scatter plot, you'll immediately notice that the data points aren't uniform in size. Instead, each point's size represents the average mass of the corresponding meteorite. This visual dimension adds depth to your exploration, allowing you to instantly grasp the range of meteorite sizes.</p>
+        </li>
+        <li>
+            <strong>Zoom and Pan:</strong>
+            <p>Dive into the data by using our user-friendly zoom and pan features. Zoom in to closely examine specific data points or zoom out for a broader overview of meteorite masses across time. Pan the plot to focus on specific years or periods of interest.</p>
+        </li>
+        <li>
+            <strong>Temporal Insights:</strong>
+            <p>Track the changes in meteorite masses over the years as you interact with the scatter plot. Explore trends, anomalies, and the impact of cosmic events on meteorite size. The ability to move through time seamlessly enriches your understanding of meteoritic history.</p>
+        </li>
+        <li>
+            <strong>Intuitive Interaction:</strong>
+            <p>Our scatter plot is designed for intuitive interaction, ensuring that you can navigate and analyze the data effortlessly. Whether you're a meteorite enthusiast or a researcher, you'll find this visualization tool both informative and engaging.</p>
+        </li>
+    </ol>
+
+    <div id="scatter_plot" class="centre">
+    </div>
+</body>
+
+</html>
